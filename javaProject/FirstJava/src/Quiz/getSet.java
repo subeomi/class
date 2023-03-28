@@ -115,5 +115,6 @@ public class getSet {
 		
 		gs.tell();
 		
+		sc.close();
 	}
 }

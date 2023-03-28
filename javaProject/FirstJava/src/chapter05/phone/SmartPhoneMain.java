@@ -18,6 +18,13 @@ public class SmartPhoneMain {
 		System.out.println(sp3.size);
 		System.out.println(sp3.volume);
 		
+		Member member = new Member("King", "king@gmail.com", 20, "010-7777-5555", sp2);
+		
+		printInfo(member);
+	}
+	
+	static void printInfo(Member member) {
+		member.showData();
 	}
 	
 }

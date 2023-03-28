@@ -2,7 +2,7 @@ package Quiz;
 
 import java.util.Scanner;
 
-public class getSet {
+public class Contact {
 
 	private String name;
 	private String pn;
@@ -11,7 +11,7 @@ public class getSet {
 	private String bd;
 	private String group;
 			
-	public getSet(String name, String pn, String email, String address, String bd, String group) {
+	public Contact(String name, String pn, String email, String address, String bd, String group) {
 		this.name = name;
 		this.pn = pn;
 		this.email = email;
@@ -99,7 +99,7 @@ public class getSet {
 		System.out.println("그룹을 입력하세요.");
 		String group = sc.nextLine();
 		
-		getSet gs = new getSet(name, pn, email, address, bd, group);
+		Contact gs = new Contact(name, pn, email, address, bd, group);
 		gs.tell();
 		System.out.println();
 		

@@ -106,7 +106,13 @@ public class getSet {
 		System.out.println("전화번호 변경");
 		pn = sc.nextLine();
 		
+		System.out.print("변경된 전화번호 :" + gs.getPn() + " -> ");
+		
 		gs.setPn(pn);
+		gs.getPn();
+		
+		System.out.println(pn);
+		System.out.println();
 		
 		gs.tell();
 		

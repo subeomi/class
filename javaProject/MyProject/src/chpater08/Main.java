@@ -7,7 +7,7 @@ public class Main {
 		// 3. 다형성의 특징으로 상위 타입인 인터페이스 타입의 참조변수에 인터페이스를 구현한 클래스 타입의 인스턴스를 참조하는 코드를 작성해 봅시
 		// 다.
 		
-		// 부모인 Calculator 인터페이스 타입의 참조변수 cal에 인터페이스를 구현한 CalculatorClass2 타입의 인스턴스를 참조하는 cal.~ 코드
+		// [부모인 Calculator 인터페이스 타입의 참조변수 cal]에 [인터페이스를 구현한 CalculatorClass2 타입의 인스턴스]를 참조하는 cal.~ 코드
 		
 		Calculator cal = /* (Calculator) */ new CalculatorClass2();
 		

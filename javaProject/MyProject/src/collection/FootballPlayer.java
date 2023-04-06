@@ -86,23 +86,36 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 	// 같은 팀의 선수들은 이름 순으로 정렬하고, 
 	// 같은 이름의 선수는 번호 순으로 저장하는 
 	// 프로그램을 만들어 봅시다. 
+//	public int compareTo(FootballPlayer o) {
+//		int chk = 0;
+//		if(team.compareTo(o.getTeam()) > 0) {
+//			chk = 1;
+//		} else if(team.compareTo(o.getTeam()) < 0){
+//			chk = -1;
+//		} else if(name.compareTo(o.getName()) > 0) {
+//			chk = 1;
+//		} else if(name.compareTo(o.getName()) < 0) {
+//			chk = -1;
+//		} else if(number > o.getNumber()) {
+//			chk = 1;
+//		} else if(number < o.getNumber()) {
+//			chk = -1;
+//		}
+//		return chk;
+//	}
+	
 	public int compareTo(FootballPlayer o) {
-		int chk = 0;
-		if(team.compareTo(o.getTeam()) > 0) {
-			chk = 1;
-		} else if(team.compareTo(o.getTeam()) < 0){
-			chk = -1;
-		} else if(name.compareTo(o.getName()) > 0) {
-			chk = 1;
-		} else if(name.compareTo(o.getName()) < 0) {
-			chk = -1;
-		} else if(number > o.getNumber()) {
-			chk = 1;
-		} else if(number < o.getNumber()) {
-			chk = -1;
+		int compare = this.team.compareTo(o.getTeam());
+		if(compare == 0) {
+			compare = this.name.compareTo(o.getName());
+			if(compare == 0) {
+				compare = this.number - o.getNumber();
+//				compare = Integer.compare(this.number, o.getNumber());
+			}
 		}
-		return chk;
+		return compare;
 	}
+	
 
 }
 	

@@ -1,7 +1,6 @@
 package collection;
 
 import java.util.HashMap;
-import java.util.Set;
 
 public class HashMapMain {
 
@@ -25,6 +24,9 @@ public class HashMapMain {
 //			System.out.println(keyName + " : " + hashMap.get(keyName));
 //		}
 		
+		// 4. 축구선수의 번호를 key로 하고 축구선수 인스턴스를 저장하는 Map<K,V> 
+		// 인스턴스를 이용해서 프로그램을 만들어봅시다. 
+
 		HashMap<Integer, FootballPlayer> fpMap = new HashMap<>();
 		
 		FootballPlayer fp = new FootballPlayer("손흥민", 7, "토트넘", 30);

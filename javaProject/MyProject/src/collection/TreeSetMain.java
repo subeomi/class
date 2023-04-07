@@ -1,5 +1,7 @@
 package collection;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class TreeSetMain {
@@ -17,11 +19,15 @@ public class TreeSetMain {
 		fpTree.add(new FootballPlayer("양흥민", 8, "토트넘", 30));
 		fpTree.add(new FootballPlayer("양흥민", 9, "토트넘", 30));
 		
+
 		// TreeSet
 		System.out.println("나의 팀 선수 정보");
 		for(FootballPlayer player : fpTree) {
 			player.showInfo();
 		}
+		
+		
+
 	}
 	
 }

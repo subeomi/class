@@ -63,14 +63,18 @@ public class FootballPlayer implements Comparable<FootballPlayer> {
 
 	@Override
 	public boolean equals(Object obj) {
+		boolean result = false;
 		
 		if(obj != null && obj instanceof FootballPlayer) {
 			FootballPlayer fp = (FootballPlayer) obj;
-			if(fp.name.equals(this.name) && fp.team.equals(this.team) && fp.age == this.age) {
-				return true;
-			}
+//			if(fp.name.equals(this.name) && fp.team.equals(this.team) && fp.age == this.age) {
+//				result = true;
+//			}
+			result = this.team.equals(fp.getTeam()) 
+					&& this.name.equals(fp.getName()) 
+					&& this.age == fp.getAge();
 		}
-		return false;
+		return result;
 	}
 	
 	@Override

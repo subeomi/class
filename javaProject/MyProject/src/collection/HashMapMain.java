@@ -29,8 +29,9 @@ public class HashMapMain {
 
 		HashMap<Integer, FootballPlayer> fpMap = new HashMap<>();
 		
-		FootballPlayer fp = new FootballPlayer("손흥민", 7, "토트넘", 30);
-		fpMap.put(7, fp);
+//		FootballPlayer fp = new FootballPlayer("손흥민", 7, "토트넘", 30);
+//		fpMap.put(7, fp);
+		fpMap.put(7, new FootballPlayer("손흥민", 7, "토트넘", 30));
 		FootballPlayer fp2 = new FootballPlayer("해리케인", 10, "토트넘", 30);
 		fpMap.put(10, fp2);
 		

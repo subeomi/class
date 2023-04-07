@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 public class SerializableTest {
 
 	public static void main(String[] args) {
+		
 		Person person = new Person("KING", 20);
 		String msg = "안녕하세요";
 		
@@ -17,9 +18,10 @@ public class SerializableTest {
 			
 			inputStream = new ObjectInputStream(in);
 			
-//			Person p = (Person) inputStream.readObject();
+			// 역 직렬화는 순서가 중요.
 			Person p = (Person) inputStream.readObject();
 			String newStr = (String) inputStream.readObject();
+			// Person p = (Person) inputStream.readObject();
 			
 			p.tell();
 			System.out.println(newStr);

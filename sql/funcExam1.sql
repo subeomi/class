@@ -1,11 +1,12 @@
 -- 16. SUBSTR 함수를 사용하여 
 -- 사원들의 입사한 년도와 입사한 달만 출력하시오.
 select substr(hiredate, 1, 5)
-from emp;
+from emp
+WHERE SUBSTR(HIREDATE, 1, 2) = 81;
 
 -- 17. SUBSTR 함수를 사용하여 
 -- 4월에 입사한 사원을 출력하시오.
-select ename
+select *
 from emp
 where substr(hiredate, 4, 2) = 04;
 
@@ -74,9 +75,10 @@ FROM EMP;
 -- GROUP BY에 사용되지 않은 컬럼이 조건에 들어가면 GROUP 어쩌고 오류
 SELECT JOB, MIN(SAL)
 FROM EMP
-GROUP BY JOB, MGR
-HAVING MIN(SAL) >= 2000 AND MGR IS NOT NULL;
---ORDER BY SAL DESC; 출력 결과가 내림차순
+WHERE MGR IS NOT NULL
+GROUP BY JOB
+HAVING MIN(SAL) >= 2000
+ORDER BY MIN(SAL) DESC;
 
 -- 29. 각 부서에 대해 부서번호, 사원 수, 부서 내의 모든 사원의 평균 급여를 출력하시오. 
 -- 평균 급여는 소수점 둘째 자리로 반올림 하시오.

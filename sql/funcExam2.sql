@@ -2,13 +2,13 @@
 --(3) 박지성의총구매액(박지성의고객번호는1번으로놓고작성)
 SELECT CUSTID, SUM(SALEPRICE)
 FROM ORDERS
-HAVING CUSTID = 1
+where CUSTID = 1
 GROUP BY CUSTID;
 
 -- (4) 박지성이구매한도서의수(박지성의고객번호는1번으로놓고작성)
 SELECT CUSTID, COUNT(*)
 FROM ORDERS
-HAVING CUSTID = 1
+where CUSTID = 1
 GROUP BY CUSTID;
 
 -- 2 마당서점의 운영자와 경영자가 요구하는 다음 질문에 대해 SQL문을 작성하시오.

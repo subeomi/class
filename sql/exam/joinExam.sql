@@ -16,7 +16,7 @@ where e.deptno = d.deptno
       and e.ename like '%A%';
 
 -- 37. JOIN을 이용하여 NEW YORK에 근무하는 모든 사원의 이름, 업무, 부서번호 및 부서명을 출력하시오.
-select e.ename, e.job, d.deptno, d.dname
+select e.ename, e.job, e.deptno, d.dname
 from emp e, dept d
 where e.deptno = d.deptno
       and d.loc = 'NEW YORK';

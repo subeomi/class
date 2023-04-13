@@ -42,6 +42,7 @@ where e.mgr = m.empno
 ;
 
 -- 41. SELF JOIN을 사용하여 WARD 사원보다 늦게 입사한 사원의 이름과 입사일을 출력하시오.
+-- mgr 참조할 시 KING이 누락
 select e.ename, e.hiredate
 from emp e, emp m
 where e.empno = m.empno

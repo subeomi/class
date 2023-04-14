@@ -68,7 +68,7 @@ from (select name, count(distinct publisher) count
     from customer c, book b, orders o 
     where c.custid = o.custid 
     and b.bookid = o.bookid
-group by name) 
+    group by name) 
 where count >= 2;
     
     

@@ -149,3 +149,35 @@ select * from emp01;
 -- 사원 테이블에서 부서명이 SALES인 사원을 모두 삭제해봅시다.
 select deptno from dept02 where dname = 'SALES';
 delete from emp01 where deptno = (select deptno from dept02 where dname = 'SALES');
+
+commit;
+
+delete from emp;
+
+select * from emp;
+select * from emp01;
+
+delete from emp01;
+
+rollback;
+
+-- sequence : 연속된 숫자를 생성해주는 객체
+-- create sequence 이름 [옵션]
+
+drop sequence seq_dept_deptno;
+
+create sequence seq_dept_deptno
+start with 10
+increment by 10;
+
+-- 자동 생성된 값 : 시퀀스 객체이름.nextval
+select seq_dept_deptno.nextval
+from dual;
+
+select * from dept01;
+-- 생성할 때마다 deptno가 10씩 증가되는 행 생성
+insert into dept01 values (seq_dept_deptno.nextval, 'test이름', 'test위치');
+
+-- 마지막 시퀀스 값
+select seq_dept_deptno.currval
+from dual;

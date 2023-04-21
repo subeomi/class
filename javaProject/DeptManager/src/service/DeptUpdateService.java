@@ -7,31 +7,31 @@ import dao.DeptDao;
 import domain.Dept;
 import util.ConnectionProvider;
 
-public class DeptSearchService {
+public class DeptUpdateService {
 
 	DeptDao dao;
 	
 	// 싱글톤 시작
-	private DeptSearchService() {
+	private DeptUpdateService() {
 		this.dao = DeptDao.getInstance();
 	}
 	
-	private static DeptSearchService service = new DeptSearchService();
+	private static DeptUpdateService service = new DeptUpdateService();
 	
-	public static DeptSearchService getInstance() {
+	public static DeptUpdateService getInstance() {
 		return service;
 	}
 	// 싱글톤 종료
-
-	// 검색 번호를 받고 Dept 정보를 저장하고 있는 객체를 반환
-	public Dept searchDept(int deptno) {
-
+	
+	public int updateDept(Dept newDept) {
+		
 		Connection conn = null;
-		Dept dept = null;
-
+		int result = 0;
+		
 		try {
 			conn = ConnectionProvider.getConnection();
-			dept = dao.selectByDeptno(conn, deptno);
+			
+			result = dao.updateDeptByDeptno(conn, newDept);
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -47,9 +47,11 @@ public class DeptSearchService {
 				}
 			}
 		}
-
-		return dept;
-
+		
+		return result;
+		
 	}
-
+	
+	
+	
 }

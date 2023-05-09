@@ -4,22 +4,26 @@ import org.example.dao.Dao;
 import org.example.dao.MemberDao;
 import org.example.domain.Member;
 import org.example.domain.RegisterRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.Date;
 
 public class MemberRegisterService {
 
+    @Autowired
+    @Qualifier("member")
     private Dao dao;
 
     // 생성자를 통해서 Dao를 주입
-    public MemberRegisterService(Dao dao) { // new MemberDao
-        this.dao = dao;
-    }
-
-    // setter 이용해서 Dao 주입
-    public void setDao(Dao dao) {
-        this.dao = dao;
-    }
+//    public MemberRegisterService(Dao dao) { // new MemberDao
+//        this.dao = dao;
+//    }
+//
+//    // setter 이용해서 Dao 주입
+//    public void setDao(Dao dao) {
+//        this.dao = dao;
+//    }
 
     // 등록 처리해주는 메소드 :
     // RegisterRequest (email, password, confirmPasswor, name)

@@ -12,7 +12,7 @@ public class MemberManagerMain1 {
 
     // 조립기 : 객체를 관리
     static GenericXmlApplicationContext ctx =
-            new GenericXmlApplicationContext("classpath:appCtx.xml");
+            new GenericXmlApplicationContext("classpath:appCtx1.xml");
 
 
     public static void main(String[] args) {

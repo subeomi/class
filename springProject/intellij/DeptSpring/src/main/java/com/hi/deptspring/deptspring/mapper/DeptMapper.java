@@ -1,6 +1,7 @@
 package com.hi.deptspring.deptspring.mapper;
 
 import com.hi.deptspring.deptspring.domain.DeptDTO;
+import com.hi.deptspring.deptspring.domain.DeptRegistRequest;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -13,5 +14,13 @@ public interface DeptMapper {
 
     // deptno 컬럼으로 검색 -> DeptDTO
     DeptDTO selectByDeptno(int deptno);
+
+    // DeptRegistRequest를 받아서 insert해 주는 메소드
+    int insertDept(DeptRegistRequest request);
+
+    // DeptDTO 전달 받고 update 메소드
+    int updateDept(DeptDTO deptDTO);
+
+    int deleteDept(int deptno);
     
 }

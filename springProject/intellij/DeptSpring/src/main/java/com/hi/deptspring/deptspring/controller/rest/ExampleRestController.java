@@ -33,7 +33,7 @@ public class ExampleRestController {
         List<DeptDTO> list = new ArrayList<>();
         list.add(new DeptDTO(10, "Test1", "Loc1")); // @AllArgsConstructor
         list.add(new DeptDTO(20, "Test2", "Loc2")); // 생성자 추가 어노테이션
-        list.add(new DeptDTO(30, "Test3", "Loc3"));
+        list.add(new DeptDTO(30, "Test3", "Loc3")); // 객체등록을 위함
 
         return list;
     }

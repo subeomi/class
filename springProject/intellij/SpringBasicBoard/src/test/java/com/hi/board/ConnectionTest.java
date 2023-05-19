@@ -3,6 +3,7 @@ package com.hi.board;
 import com.hi.board.domain.BoardDTO;
 import com.hi.board.domain.RequestRegBoard;
 import com.hi.board.mapper.BoardMapper;
+import com.hi.board.service.BoardDeleteService;
 import com.hi.board.service.BoardListService;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Assertions;
@@ -31,6 +32,15 @@ public class ConnectionTest {
 
     @Autowired
     private BoardListService listService;
+
+
+    @Test
+    public void selectByBnoTest() {
+        BoardDTO board = boardMapper.selectByBno(1);
+        log.info("1번 게시물 : " + board);
+        board = boardMapper.selectByBno(4);
+        log.info("4번 게시물 : " + board);
+    }
 
     @Test
     public void deptListTest(){

@@ -1,7 +1,14 @@
 package com.hi.board.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.util.List;
 
+@Getter
+@Setter
+@ToString
 public class BoardListPage {
     
     // 페이지당 출력할 게시물의 개수
@@ -22,7 +29,10 @@ public class BoardListPage {
     // 다음 버튼 출력 유무
     private boolean next;
 
-    public BoardListPage(int countPerPage, int pageNum, List<BoardDTO> list, int totalCount) {
+    public BoardListPage(int countPerPage,
+                         int pageNum,
+                         List<BoardDTO> list,
+                         int totalCount) {
         this.countPerPage = countPerPage;
         this.pageNum = pageNum;
         this.list = list;
@@ -31,7 +41,7 @@ public class BoardListPage {
     }
 
     private void calPageInfo() {
-        // 끝 번호. ceil = 무조건 올림 1.1 = 2
+        // 끝 번호. ceil = 소수점 이하의 값을 무조건 올림 1.1 = 2
         this.endNum = (int)(Math.ceil(this.pageNum * 1.0 / 10)) * 10;
 
         // 시작 번호

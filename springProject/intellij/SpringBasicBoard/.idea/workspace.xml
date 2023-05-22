@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6240a0-36b8-47a6-8be6-f8670cfc0521" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardModifyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardReadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestModifyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardDeleteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardModifyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardReadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardSearchOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/PageOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardWriteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardWriteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestRegBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestRegBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/mapper/BoardMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardWriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/service/BoardWriteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddlboardscript/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddlboardscript/ddl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hi/board/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hi/board/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddlboardscript/ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +69,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/hi/Documents/GitHub/class/springProject/intellij/SpringMVC",
+    "last_opened_file_path": "C:/Users/hi/Documents/GitHub/class/springProject/intellij/DeptSpring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,127 +84,7 @@
       <recent name="C:\Users\hi\Documents\GitHub\class\springProject\intellij\SpringBasicBoard\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ConnectionTest.delete">
-    <configuration name="ConnectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.hi.board.ConnectionTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConnectionTest.boardInsertTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.hi.board.ConnectionTest.boardInsertTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConnectionTest.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.hi.board.ConnectionTest.delete&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConnectionTest.deptListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.hi.board.ConnectionTest.deptListTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConnectionTest.selectByBnoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.hi.board.ConnectionTest.selectByBnoTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Tomcat 9.0.74" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.74" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -306,23 +173,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Gradle.ConnectionTest.delete" />
-      <item itemvalue="Gradle.ConnectionTest.selectByBnoTest" />
-      <item itemvalue="Gradle.ConnectionTest" />
-      <item itemvalue="Gradle.ConnectionTest.boardInsertTest" />
-      <item itemvalue="Gradle.ConnectionTest.deptListTest" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.74" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.ConnectionTest.delete" />
-        <item itemvalue="Gradle.ConnectionTest.selectByBnoTest" />
-        <item itemvalue="Gradle.ConnectionTest.deptListTest" />
-        <item itemvalue="Gradle.ConnectionTest.boardInsertTest" />
-        <item itemvalue="Gradle.ConnectionTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -333,7 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684392377070</updated>
       <workItem from="1684392378049" duration="8804000" />
-      <workItem from="1684455069823" duration="24666000" />
+      <workItem from="1684455069823" duration="24707000" />
+      <workItem from="1684714287426" duration="11525000" />
     </task>
     <servers />
   </component>

@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b6240a0-36b8-47a6-8be6-f8670cfc0521" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardWriteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/controller/BoardWriteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/BoardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestModifyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestModifyRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestRegBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/board/domain/RequestRegBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddlboardscript/tbl_board_script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ddlboardscript/tbl_board_script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="6b6240a0-36b8-47a6-8be6-f8670cfc0521" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,6 +178,7 @@
       <workItem from="1684455069823" duration="24707000" />
       <workItem from="1684714287426" duration="24791000" />
       <workItem from="1684802436738" duration="7535000" />
+      <workItem from="1684974233590" duration="599000" />
     </task>
     <servers />
   </component>
